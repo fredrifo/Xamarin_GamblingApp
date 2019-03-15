@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamblingApp.Games_Dice">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#282828">
+
+            <StackLayout>
+
+                <Label Text="You               Opponent"
+                       Font="24"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+                
+                
+                <FlexLayout
+                    Direction="Row"
+                    HeightRequest="200"
+                    Wrap="Wrap"
+                        Padding="2"
+                        JustifyContent="Center">
+                        
+                        <Image x:Name="PlayerDice"
+                       Source="gamepad.png"
+                           WidthRequest="184"
+                       />
+
+                        <Image x:Name="OpponentDice" 
+                       Source="gamepad.png"
+                           WidthRequest="184"
+                       />
+                        
+                    </FlexLayout>
+
+                </StackLayout>
+                
+                
+                <Entry x:Name="betAmount"
+                    WidthRequest="300"
+                       Text="Place your bet here:"
+                       Keyboard="Numeric"
+                       HorizontalTextAlignment="Left"
+                       TextColor="White"
+                       Focused="BetAmount_Dice_Focused"/>
+                
+                <Button Text="Throw dice"
+                        Clicked="Button_ThrowDiceAsync"
+                        TextColor="White"
+                        BackgroundColor="#595454"/>
+
+            <Label x:Name="Output" 
+                   Text="Make Your Bet"
+                   TextColor="White"/>
+
+            <Label x:Name="Credits"
+                   Text="Credits"
+                   TextColor="White"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

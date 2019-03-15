@@ -1,0 +1,76 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamblingApp.Games_BlackJack">
+    <ContentPage.Content>
+        <StackLayout
+            BackgroundColor="#282828">
+
+            <StackLayout>
+
+                <Label Text="Dealer"
+                       Font="24"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center"/>
+
+
+                <FlexLayout
+                    Direction="Row"
+                    HeightRequest="200"
+                    Wrap="Wrap"
+                        Padding="2"
+                        JustifyContent="Center">
+
+                    <Image x:Name="Dealer_Card_1"
+                       Source="gamepad.png"
+                           WidthRequest="70"
+                       />
+
+                    <Image x:Name="Dealer_Card_2" 
+                       Source="gamepad.png"
+                           WidthRequest="70"
+                       />
+
+                    <Image x:Name="Dealer_Card_3" 
+                       Source="gamepad.png"
+                           WidthRequest="70"
+                       />
+
+                    <Image x:Name="Dealer_Card_4" 
+                       Source="gamepad.png"
+                           WidthRequest="70"
+                       />
+
+                    <Image x:Name="Dealer_Card_5" 
+                       Source="gamepad.png"
+                           WidthRequest="70"
+                       />
+
+                </FlexLayout>
+
+            </StackLayout>
+
+
+            <Entry x:Name="betAmount_BJ"
+                    WidthRequest="300"
+                       Text="0"
+                       Keyboard="Numeric"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"/>
+
+            <Button Text="Throw dice"
+                        
+                        TextColor="White"
+                        BackgroundColor="#595454"/>
+
+            <Label x:Name="Output_BJ" 
+                   Text="Make Your Bet"
+                   TextColor="White"/>
+
+            <Label x:Name="Credits_BJ"
+                   Text="Credits"
+                   TextColor="White"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

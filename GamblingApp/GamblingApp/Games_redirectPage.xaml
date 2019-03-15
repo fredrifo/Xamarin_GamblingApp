@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamblingApp.Games_redirectPage">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HeightRequest" Value="190"/>
+            <Setter Property="WidthRequest" Value="183"/>
+            <Setter Property="TextColor" Value="White"/>
+            <Setter Property="BackgroundColor" Value="Black"/>
+            <Setter Property="Margin" Value="1"/>
+            <Setter Property="BorderRadius" Value="100"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+             BackgroundColor="#282828">
+           
+
+            <FlexLayout 
+            Direction="Row"
+            Wrap="Wrap"
+            JustifyContent="SpaceEvenly">
+                
+
+                <Button
+                Text="Dice"
+                Clicked="Button_Clicked_Dice"/>
+                
+                <Button
+                Text="BlackJack"
+                 Clicked="Button_Clicked_BlackJack"/>
+
+
+                </FlexLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

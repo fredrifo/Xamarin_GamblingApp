@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GamblingApp.HamburgerMenu">
+    <MasterDetailPage.Master>
+        
+
+        <ContentPage
+            Title="Menu"
+            BackgroundColor="Black"
+            >
+            <StackLayout>
+
+                <Image
+                    Source="sunset.jpg"
+                    HeightRequest="240"
+                    Aspect="AspectFill"
+                    />
+
+                <ListView BackgroundColor="Black" x:Name="ListMenu" ItemSelected="HamburgerMenu_Selected" RowHeight="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell
+                            TextColor="White"
+                            DetailColor="DarkBlue"
+                                Height="100"
+                            Text="{Binding MenuTitle}"
+                            Detail="{Binding MenuDetail}"
+                            ImageSource="{Binding icon}"
+                            
+                            >
+                            </ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </StackLayout>
+
+        </ContentPage>
+        
+        
+
+
+    </MasterDetailPage.Master>
+    
+</MasterDetailPage>
