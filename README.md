@@ -8,3 +8,6 @@ This version includes:
 In development:
 - BlackJack
 - A local database that stores user information (coin balance, coins won, coins lost and the amount of times the user has refilled their balance)
+
+Created by:
+- Fredrik Forsell
